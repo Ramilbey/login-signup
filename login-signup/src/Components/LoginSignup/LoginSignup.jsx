@@ -2,13 +2,14 @@ import "./LoginSignup.css";
 import email from "../Assests/email.png";
 import password from "../Assests/password.png";
 import person from "../Assests/person.png";
-import React from "react";
+import React, { useState } from "react";
 
 const LoginSignup = () => {
+  const [action, setAction] = useState("Sign Up");
   return (
     <div className="container">
       <div className="header">
-        <div className="text">Sign Up</div>
+              <div className="text">{action}</div>
         <div className="underline">underline</div>
       </div>
       <div className="inputs">
@@ -19,19 +20,21 @@ const LoginSignup = () => {
 
         <div className="input">
           <img src={email} alt="" />
-          <input type="email" placeholder="email"/>
+          <input type="email" placeholder="email" />
         </div>
 
         <div className="input">
           <img src={password} alt="" />
           <input type="password" placeholder="password" />
         </div>
-          </div>
-          <div className="forgot-password">Lost Password? <span>Click Here!</span></div>
-          <div className="submit-container">
-              <div className="submit">Sign up</div>
-              <div className="submit">Login</div>
-          </div>
+      </div>
+      <div className="forgot-password">
+        Lost Password? <span>Click Here!</span>
+      </div>
+      <div className="submit-container">
+        <div className={action === 'Login' ? "submit gray" : "submit"}>Sign up</div>
+        <div className={action === "Sign Up" ? "submit gray" : "submit"}>Login</div>
+      </div>
     </div>
   );
 };
