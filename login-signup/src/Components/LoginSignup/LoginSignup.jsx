@@ -5,7 +5,7 @@ import person from "../Assests/person.png";
 import React, { useState } from "react";
 
 const LoginSignup = () => {
-  const [action, setAction] = useState("Sign Up");
+  const [action, setAction] = useState("Login");
   return (
     <div className="container">
       <div className="header">
