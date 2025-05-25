@@ -13,20 +13,25 @@ const LoginSignup = () => {
       </div>
       <div className="inputs">
         <div className="input">
-          <img src="" alt="" />
+          <img src={person} alt="" />
           <input type="text" />
         </div>
 
         <div className="input">
-          <img src="" alt="" />
+          <img src={email} alt="" />
           <input type="email" />
         </div>
 
         <div className="input">
-          <img src="" alt="" />
+          <img src={password} alt="" />
           <input type="password" />
         </div>
-      </div>
+          </div>
+          <div className="forgot-password">Lost Password? <span>Click Here!</span></div>
+          <div className="submit-container">
+              <div className="submit">Sign up</div>
+              <div className="submit">Login</div>
+          </div>
     </div>
   );
 };
