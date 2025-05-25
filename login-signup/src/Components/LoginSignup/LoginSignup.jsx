@@ -1,7 +1,7 @@
 import "./LoginSignup.css";
-import email from "../Assests/email.png";
-import password from "../Assests/password.png";
-import person from "../Assests/person.png";
+import email from "../Assets/email.png";
+import password from "../Assets/password.png";
+import person from "../Assets/person.png";
 import React, { useState } from "react";
 
 const LoginSignup = () => {
